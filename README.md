@@ -7,7 +7,7 @@
 INSTALL INSTRUCTIONS:
 
 - Download and extract zip file
-- Put AutoVOD in root of C drive -> C:\AutoVOD
+- Put AutoVOD folder in root of C drive -> C:\AutoVOD
 - Follow setup below or in README in the zip folder (recommended)
 
 -----------------------------------------------------------------------------
