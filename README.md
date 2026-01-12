@@ -1,13 +1,15 @@
-AutoVOD v1.0
-Created by Sage Severson
+ <!--
+ 
+ AutoVOD 1.0
 
-A tool designed to auto-upload VODs saved between recordings in OBS directly to YouTube with all metadata filled.
+ Created by Sage Severson
 
-Instructions:
 
-1) Ensure OBS is installed
+ Instructions:
 
-2) Download Python 3.11 using link below (Will not work with anything newer than 3.11 currently)!!
+ 1) Ensure OBS is installed
+
+ 2) Download Python 3.11 using link below (Will not work with anything newer than 3.11 currently)!!
 
 	https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
 
@@ -16,10 +18,10 @@ Instructions:
 
 
 
-3) Creating Google OAuth Key:
+ 3) Creating Google OAuth Key:
 
 
-*This is required by Google. Will ask for some details such as contact email but since you won't share this project this won't be relevant.*
+ *This is required by Google. Will ask for some details such as contact email but since you won't share this project this won't be relevant.*
 
 
 
@@ -30,15 +32,12 @@ Instructions:
 	III) Find and click create Credentials
 
 		a) Credential Type:
-
 			YouTube Data API v3
 
 			User Data (OAuth client)
 			
 		b) OAuth Client ID
-
 			Application Type-- Desktop App
-
 			Name: OBS Uploader
 
 
@@ -88,13 +87,13 @@ Instructions:
 	II) For first time setup, this will launch google cloud console and ask for permission. If this fails, ensure you have set up your email as a test user in step 3.
 	III) Once this succeeds, this will create a pickle file in the root folder. This allows you to use the application without asking for permission in the future.
 
-6) Open OBS and go to Tools --> Scripts
+ 6) Open OBS and go to Tools -> Scripts
 	
 	I) In python settings, browse and find the root folder of python 3.11
 	II) Ensure OBS says "Loaded Python version 3.11"
 	III) Restart OBS to ensure changes took place
 
-7) In your main OBS scene (the one you’ll record from), create these Text (GDI+) sources:
+ 7) In your main OBS scene (the one you’ll record from), create these Text (GDI+) sources:
 
 	P1_Name
 	P2_Name
@@ -103,14 +102,15 @@ Instructions:
 	Character 1
 	Character 2
 
-	*Character fields can be left blank if not wanted. 
-
+	NOTES:
+	
+	* Character fields can be left blank if not wanted. Right now they will show up in the description but not the title.
 	** These are what the script reads to build the title / description.
 	*** If your overlay already has labels, you can just rename those sources
 
-8) In OBS, go to Tools --> Scripts and add the obs_trigger.py script located in the OBS_AutoUploader root folder
+ 8) In OBS, go to Tools -> Scripts and add the obs_trigger.py script located in the OBS_AutoUploader root folder
 
-9) Look at Script description on right side of window. ENABLE auto-upload and fill out fields:
+ 9) Look at Script description on right side of window. ENABLE auto-upload and fill out fields:
 
 	I)  Python.EXE location (Most likely C:\Users\USER\AppData\Local\Programs\Python\Python311)
 	II) location youtube_uploader.py (OBS_AutoUploader root folder)
@@ -118,6 +118,8 @@ Instructions:
 	IV) Press close
 	
 
-10) Test script via short recording
+ 10) Test script via short recording
 
-11) Finished!!! Enjoy :)
+ 11) Finished!!! Enjoy :)
+ 
+ -->
