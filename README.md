@@ -83,7 +83,7 @@ INSTALL INSTRUCTIONS:
 4) Run install_dependencies.bat in the AutoVOD root folder
 
 
-5) Run FinalCheck.bat in the AutoVOD root folder. Take note run the .bat file, not the .py file. They run the same process, but the py file will close automatically without you being able to verify
+5) Run FinalCheck.bat in the AutoVOD root folder. *If you run the .py file by accident, it will close automatically without you being able to verify*
 
 	I) This will check that the proper py files, secret_client.json file, and tests if YouTube authentication succeeds.
 	II) For first time setup, this will launch google cloud console and ask for permission. If this fails, ensure you have set up your email as a test user in step 3.
