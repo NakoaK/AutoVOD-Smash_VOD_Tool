@@ -20,13 +20,13 @@ INSTALL INSTRUCTIONS:
 
  2) Download Python 3.11 using link below (will not work with anything newer than 3.11 currently)
 
-	https://www.python.org/ftp/python/3.11.0/python-3.11.0-amd64.exe
+	https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe
 
 	I) Install in default path
 	II) MAKE SURE TO CHECK "Add python.exe to PATH" (VERY IMPORTANT)
 
 
- 3) Creating Google OAuth Key:
+ 4) Creating Google OAuth Key:
 
 
  *This is required by Google. Will ask for some details such as contact email but since you won't share this project this won't be used or made public*
@@ -83,7 +83,7 @@ INSTALL INSTRUCTIONS:
 4) Run install_dependencies.bat in the AutoVOD root folder
 
 
-5) Run FinalCheck.bat in the AutoVOD root folder. Take note to not run FinalCheck.py by accident
+5) Run FinalCheck.bat in the AutoVOD root folder. Take note run the .bat file, not the .py file. They run the same process, but the py file will close automatically without you being able to verify
 
 	I) This will check that the proper py files, secret_client.json file, and tests if YouTube authentication succeeds.
 	II) For first time setup, this will launch google cloud console and ask for permission. If this fails, ensure you have set up your email as a test user in step 3.
