@@ -8,7 +8,7 @@ Created by Sage Severson
 
 INSTALL INSTRUCTIONS:
 
-- Download and extract zip file
+- Download and extract latest release zip file
 - Put AutoVOD folder in root of C drive -> C:\AutoVOD
 - Follow setup below or in README in the zip folder (recommended)
 
